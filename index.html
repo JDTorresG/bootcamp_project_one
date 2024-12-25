@@ -18,31 +18,35 @@
             <button type="button">Iniciar Sesión</button>
         </header>
         <main>
-            <div class="jumbotron">
-                <img src="images/libros.jpg" alt="picture">
-                <h3>Deja volar tu creatividad, nosotros la materializamos...</h3>
-                <br>
-                <br>
-                <p>Los trabajos que siempre quisiste ver impresos: tesis, poemarios, cuentos, novelas, tus
-                    memorias o las de tu familia... ¡Nosotros lo hacemos realidad!</p>
+            <section class="jumbotron">
+                <div>
+                    <img src="images/libros.jpg" alt="picture">
+                </div>
+                <div>
+                    <h3>Deja volar tu creatividad, nosotros la materializamos...</h3>
+                    <p id="pj-01">Los trabajos que siempre quisiste ver impresos: tesis, poemarios, cuentos, novelas,
+                        tus
+                        memorias o las de tu familia... ¡Nosotros lo hacemos realidad!</p>
+                    <p id="pj-02"> Contamos con personal profesional que
+                        te guiarán en cada paso del proyecto: corrección, diseño, maquetación, hasta tener en tus manos
+                        ese
+                        libro con el
+                        que siempre soñaste.</p>
+                </div>
 
-                <p> Contamos con personal profesional que
-                    te guiarán en cada paso del proyecto: corrección, diseño, maquetación, hasta tener en tus manos ese
-                    libro con el
-                    que siempre soñaste.</p>
 
-
-            </div>
+            </section>
             <section class="services">
+                <h2 id="services-title">NUESTROS SERVICIOS</h2>
                 <article class="article-1">
-                    <img src="images/corrección.jpg" alt="correction">
+                    <img src="images/corrección.jpg" alt="correction" id="services-img-1">
                     <h1 class="title-article">Corrección de estilo</h1>
                     <p class="text-article">Nuestros editores son personal profesional con años de experiencia en el
                         mundo editorial. Te guiarán en el proceso de edición y corrección de tu original en cada paso
                         para dar forma al manuscrito con el que siempre soñaste.</p>
                 </article>
                 <article class="article-2">
-                    <img src="images/OIP.jpg" alt="maquetación">
+                    <img src="images/OIP.jpg" alt="maquetación" id="services-img-2">
                     <h1 class="title-article">Maquetación</h1>
                     <p class="text-article">Contamos con técnicos profesionales en el diseño y maquetación de libros,
                         quienes usarán su experiencia para ayudarte a elegir el formato y la presentación que haga lucir
@@ -50,7 +54,7 @@
                         mundo editorial.</p>
                 </article>
                 <article class="article-3">
-                    <img src="images/50_50_2.png" alt="portadas">
+                    <img src="images/50_50_2.png" alt="portadas" id="services-img-3">
                     <h1 class="title-article">Diseño de portadas</h1>
                     <p class="text-article">Tenemos acceso a una base de datos de millones de fotografías, para
                         encontrar la portada perfecta. También contamos con diseñadores gráficos especializados en el
@@ -58,67 +62,76 @@
                 </article>
 
             </section>
-            <div class="aditions">
-                <section>
+            <section class="aditions">
+                <div class="quote">
                     <q id="cita">Personal muy profesional y atento. Escucharon todas mis dudas y me consultaron en cada
                         paso del
                         proyecto, a la vez que ponían a mi disposición toda su experiencia para llegar a un resultado
                         más que satisfactorio.</q>
                     <p id="autor">—Héctor Velasco</p>
-                </section>
-                <form action="user-register">
+                </div>
+                <form class="user-register">
                     <h5 class="label">
-                        <center>REGÍSTRATE</center>
+                        <p>REGÍSTRATE</p>
                     </h5>
                     <label for="name" class="label">Usuario:</label>
-                    <input type="name" name="name" id="name" required>
+                    <input type="name" name="name" id="name" class="input" required>
                     <label for="email" class="label">Correo:</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" class="input" required>
                     <label for="password" class="label">Contraseña:</label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password" class="input" required>
                     <button id="register">REGISTRARSE</button>
                 </form>
-            </div>
+            </section>
 
         </main>
 
-        <div class="bottom">
-            <section>
+        <footer>
+            <section class="fs-1">
                 <h5>SIGUENOS</h5>
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-instagram"></a>
             </section>
-            <section>
+            <section class="fs-2">
                 <h5>SERVICIOS</h5>
-                <a href="#" class="link servicios">Corrección</a>
-                <a href="#" class="link servicios">Maquetación</a>
-                <a href="#" class="link servicios">Diseño de portadas</a>
+                <ul>
+                    <li><a href="#" class="link">Corrección</a></li>
+                    <li><a href="#" class="link">Maquetación</a></li>
+                    <li><a href="#" class="link">Diseño de portadas</a></li>
+                </ul>
             </section>
-            <section>
+            <section class="fs-3">
                 <h5>SOPORTE</h5>
-                <a href="#" class="link soporte">Servicio al cliente</a>
-                <a href="#" class="link soporte">Accesibilidad</a>
-                <a href="#" class="link soporte">Denunciar abuso</a>
-                <a href="#" class="link soporte">Ética de la empresa</a>
+                <ul>
+                    <li><a href="#" class="link">Servicio al cliente</a></li>
+                    <li><a href="#" class="link">Accesibilidad</a></li>
+                    <li><a href="#" class="link">Denunciar abuso</a></li>
+                    <li><a href="#" class="link">Ética de la empresa</a></li>
+                </ul>
             </section>
-            <section>
+            <section class="fs-4">
                 <h5>NOSOTROS</h5>
-                <a href="#" class="link nosotros">Sobre nosotros</a>
-                <a href="#" class="link nosotros">Blog</a>
-                <a href="#" class="link nosotros">Bolsa de trabjo</a>
-                <a href="#" class="link nosotros">Servicio social</a>
+                <ul>
+                    <li><a href="#" class="link">Sobre nosotros</a></li>
+                    <li><a href="#" class="link">Blog</a></li>
+                    <li><a href="#" class="link">Bolsa de trabjo</a></li>
+                    <li><a href="#" class="link">Servicio social</a></li>
+                </ul>
             </section>
-            <section>
+            <section class="fs-5">
                 <h5>LEGAL</h5>
-                <a href="#" class="link legal">Aviso de privacidad</a>
-                <a href="#" class="link legal">Terminos del servicio</a>
+                <ul>
+                    <li><a href="#" class="link">Aviso de privacidad</a></li>
+                    <li><a href="#" class="link">Terminos del servicio</a></li>
+                </ul>
+            </section>
+            <section class="bottom">
+                <hr>
+                <br>
+                <p>©2024 Ediciones Letras Nuevas. Todos los derechos reservados.</p>
             </section>
 
-        </div>
-        <footer>
-            <hr>
-            <p>©2024 Ediciones Letras Nuevas. Todos los derechos reservados.</p>
         </footer>
     </div>
 </body>
