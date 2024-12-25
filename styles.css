@@ -249,6 +249,7 @@ main {
     margin: 10px;
     border-radius: 5px;
     color: white;
+
 }
 
 /* Pie de página del sitio. */
@@ -315,4 +316,650 @@ footer {
     grid-column: 1 / span 5;
     margin: 20px;
     text-align: center;
+}
+
+/* Vista en tabletas. */
+
+@media screen and (max-width: 1024px) {
+    /* estilos generales  */
+
+* {
+    position: relative;
+    inset: 0;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos del "body". */
+
+body {
+
+}
+
+/* "Contenedor" del grid. */
+
+.container {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+                         
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, -3, .45);
+    
+}
+
+/* Cabecera del sitio. */
+
+header {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    background-color: darkslategray;
+    padding: 20px;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+header button {
+    background-color: royalblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, -9, .45);
+    width: 160px;
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14pt;
+    color: white;
+}
+
+/* Contenido principal del sitio. */
+
+main {
+    width: auto;
+    height: auto;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    border: 1px solid grey;
+}
+
+.jumbotron img {
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 15px;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, -1, .3);
+}
+
+.jumbotron h3 {
+    text-align: center;
+    margin: 30px;
+}
+
+.jumbotron p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+#pj-01 {
+    margin: 25px;
+}
+
+#pj-02 {
+    margin: 25px;
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid gray;
+}
+
+#services-title {
+    margin: 20px;
+    text-align: center;
+    grid-column: 1 / span 3;
+}
+
+.article-1 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid: 1;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#services-img-1 {
+    margin: 15px;
+    border: 5px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, -3, .45);
+    width: 80%;
+}
+
+.article-2 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid: 1;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#services-img-2 {
+    margin: 15px;
+    border: 5px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, -3, .45);
+    width: 80%;
+}
+
+.article-3 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid: 1;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#services-img-3 {
+    margin: 15px;
+    border: 5px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, -3, .45);
+    width: 80%;
+}
+
+.title-article {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.text-article {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin: 10px;
+}
+
+.aditions {
+    display: grid;
+    grid-template-columns: 70% auto;
+    margin: 25px;
+}
+.quote {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 30px;
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+}
+
+#cita {
+    font-family: cursive;
+    font-size: 16pt;
+    margin-bottom: 30px;
+}
+
+#autor {
+    font-family: cursive;
+    font-size: 18pt;
+}
+
+.user-register {
+    width: 100%;
+    height: 100%;
+    background-color: darkslategrey;
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.label {
+    font-size: 14pt;
+    margin: 10px;
+}
+
+.input {
+    width: 100%;
+    height: 18px;
+    border: 1px solid black;
+    box-shadow: 3px rgba(0, 0, -4, .3);
+}
+
+#register {
+    background-color: royalblue;
+    text-align: center;
+    height: 25px;
+    width: 160px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+/* Pie de página del sitio. */
+
+footer {
+    padding-top: 30px;
+    background-color: darkslategray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    color: white;
+    width: 100%;
+}
+
+.fs-1 {
+    grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.fs-2 {
+    grid-column: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.fs-3 {
+    grid-column: 3 / span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.fs-4 {
+    grid-column: 4 / span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.fs-5 {
+    grid-column: 5 / span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-facebook {
+    margin: 10px;
+}
+
+.fa-twitter {
+    margin: 10px;
+}
+
+.fa-instagram {
+    margin: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.bottom {
+    grid-column: 1 / span 5;
+    margin: 20px;
+    text-align: center;
+}
+}
+
+/* Vista en smarthphones. */
+
+@media screen and (max-width: 600px) {
+/* estilos generales  */
+
+* {
+    position: relative;
+    inset: 0;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos del "body". */
+
+body {
+
+}
+
+/* "Contenedor" del grid. */
+
+.container {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+                         
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, -3, .45);
+    
+}
+
+/* Cabecera del sitio. */
+
+header {
+    display: grid;
+    grid-template-columns: 15% 70% 20%;
+    background-color: darkslategray;
+    padding: 20px;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+}
+
+header h1 {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+header button {
+    background-color: royalblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, -9, .45);
+    width: 60px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+
+/* Contenido principal del sitio. */
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.jumbotron img {
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, -1, .3);
+}
+
+.jumbotron h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.jumbotron p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+#pj-01 {
+    margin: 25px;
+}
+
+#pj-02 {
+    margin: 25px;
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid gray;
+}
+
+#services-title {
+    margin: 20px;
+    text-align: center;
+    grid-column: 1;
+}
+
+.article-1 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid: 1;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#services-img-1 {
+    margin: 15px;
+    border: 5px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, -3, .45);
+    width: 80%;
+}
+
+.article-2 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid: 1;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#services-img-2 {
+    margin: 15px;
+    border: 5px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, -3, .45);
+    width: 80%;
+}
+
+.article-3 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid: 1;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#services-img-3 {
+    margin: 15px;
+    border: 5px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, -3, .45);
+    width: 80%;
+}
+
+.title-article {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.text-article {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin: 10px;
+}
+
+.aditions {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.quote {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 30px;
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+}
+
+#cita {
+    font-family: cursive;
+    font-size: 16pt;
+    margin-bottom: 30px;
+}
+
+#autor {
+    font-family: cursive;
+    font-size: 18pt;
+}
+
+.user-register {
+    width: 100%;
+    height: 100%;
+    background-color: darkslategrey;
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.label {
+    font-size: 14pt;
+    margin: 10px;
+}
+
+.input {
+    width: 100%;
+    height: 18px;
+    border: 1px solid black;
+    box-shadow: 3px rgba(0, 0, -4, .3);
+}
+
+#register {
+    background-color: royalblue;
+    text-align: center;
+    height: 25px;
+    width: 160px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+/* Pie de página del sitio. */
+
+footer {
+    padding-top: 30px;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+.fs-1 {
+    display: block;
+    margin: 20px;
+}
+
+.fs-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.fs-3 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.fs-4 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.fs-5 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.fa-facebook {
+    margin: 10px;
+}
+
+.fa-twitter {
+    margin: 10px;
+}
+
+.fa-instagram {
+    margin: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.bottom {
+    grid-column: auto;
+    margin: 20px;
+    text-align: center;
+}
 }
